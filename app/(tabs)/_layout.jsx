@@ -9,6 +9,7 @@ const TabIcon = ({ name, color, focused }) => {
       <Icon
         name={name} // 'home' for the home icon
         size={24}
+        resizeMode={Icon}
         color={focused ? color : 'gray'} // Change color based on focus
       />
       <Text style={{ color: focused ? color : 'gray' }}>{name}</Text>
